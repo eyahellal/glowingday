@@ -1,0 +1,215 @@
+.banner{
+    height: 40vh;
+    width:100%;;
+    background-image:linear-gradient(rgba(0, 0, 0,0.6),rgba(0, 0, 0,0.6)),url('img/mainpage\ banner.jpg');}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    font-family: 'syne',sans-serif;
+}
+img{
+    width: 100% ;
+    height: 100%;
+}
+.option{
+    display: flex;
+    width: 100%;
+}
+.option div{
+    padding: 30px;
+    text-align: center;
+    width: 33.33%;
+    cursor: pointer;
+}
+#identity{ 
+    background-color:#9DE0AD ;
+    color: whitesmoke;
+    transition: transform .2s
+    
+}
+#skills{
+    background-color:#45ADA8 ;
+    color:whitesmoke;
+    transition: transform .2s
+
+}
+#diploma{
+    background-color:  #594F4F;
+    color: whitesmoke;
+    transition: transform .2s;
+}
+body{
+    margin: 0 10vw;
+
+}
+.identity-card{
+    display: flex;
+    width:70%;
+    height:170px;
+    background-color:white;
+    
+    
+    
+   
+}
+.content{
+    display: flex;
+    justify-content: center;
+
+}
+.form{
+    background-color: rgb(2 31 45);
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.text{
+    padding: 15px;
+    display: grid;
+    place-items: center;
+    background:linear-gradient(white,lightgrey);}
+*{
+    font-family: "syne",sans-serif;
+}
+#identity:hover{
+    transform: scale(1.2);
+}
+#skills:hover{
+    transform: scale(1.2);
+}
+#diploma:hover{
+    transform: scale(1.2);
+}
+.animation{
+    scale: 1.2;
+}
+.unactive{
+    display: none;
+}
+ul li{
+    color: black;
+    list-style-type:circle;
+    
+}
+ul{
+    display:flex ;
+    flex-direction: column;
+    gap:15px;
+}
+.skills{
+    padding: 20px;
+    font-size: large;
+    background:linear-gradient(white,lightgrey);
+    visibility: hidden;   
+   
+}
+.diploma{
+    display: flex;
+    justify-content: center;
+    background:linear-gradient(white,lightgrey);
+    width:70%;
+    padding: 20px;
+    font-size: large;
+    display: none;
+    
+}
+nav{
+    display:flex;
+
+    justify-content: space-between;
+    padding:20px 60px;
+    align-items: center;
+    background-color: #0c1b4d;   
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 30px;
+    
+} 
+  
+ 
+
+nav ul li{
+    list-style: none;
+    color: black;
+}
+nav ul li :hover{
+    border-bottom: 2px solid white;
+    border-radius: 10px;
+    padding-bottom: 7px;
+    transition:0.25s;
+    cursor: pointer;
+
+}
+nav ul li a{
+    
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    width:70px;
+   height:70px;
+   margin-left:50px; 
+}
+footer{
+    width: 100%;
+    background-color: rgb(29, 29, 41);
+    color:white;
+    text-align: center;
+    display: flex;
+    gap:2rem;
+    margin-top: 5rem;
+  }
+  .footer-about{
+    display:inline-block;
+    text-align: left;
+    width:25% ;
+    margin: 1.25rem;
+}
+.links ul li{
+    list-style: none;
+}
+.links ul li a {
+    color: white;
+    text-decoration: none;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    margin:1.25rem;   
+}
+.links ul{
+    display:flex;
+    flex-direction: column;
+    gap:0.75rem;
+    align-items: flex-start;   
+}
+.links ul li a:hover {
+    text-decoration: underline;
+    color: blue;
+
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+.contact{
+    width:25% ;
+    margin: 1rem;
+    text-align: left;
+}
+footer button{
+    width:25%;
+}
+footer button:hover{
+    background-color: black;
+    color:white
+
+}

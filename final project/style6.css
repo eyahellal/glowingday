@@ -1,0 +1,360 @@
+.banner{
+    height: 40vh;
+    width:100%;
+    background-image:linear-gradient(rgba(0, 0, 0,0.6),rgba(0, 0, 0,0.6)),url('img/mainpage\ banner.jpg');
+    position: relative;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    font-family: 'syne',sans-serif;}
+img{
+    width: 100% ;
+    height: 100%;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    padding:0px 60px;
+    align-items: center;
+    background-color: #0c1b4d;
+    
+    
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 30px;
+    
+}
+
+nav ul li{
+    list-style: none;
+    color: black;
+}
+nav ul li :hover{
+    border-bottom: 2px solid white;
+    border-radius: 10px;
+    padding-bottom: 7px;
+    transition:0.25s;
+    cursor: pointer;
+
+}
+nav ul li a{
+    
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    width:70px;
+   height:70px;
+   margin-left:50px;
+
+}
+.banner h1{
+    position:absolute ;
+    color: white;
+    bottom:0
+}
+
+.job-description{
+    background-color: #9CB4CC;
+    width: 50vw;
+    color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    margin-top:3vh;
+    font-size: 18px;
+    
+}
+.skills{
+    display:flex;
+    flex-direction: column;
+    place-self: center;
+    gap:2rem;
+    background: linear-gradient(white,lightblue);
+    padding: 3rem;
+    width: fit-content;
+    
+    
+  
+
+}
+.info{
+    margin-left: 3rem;
+    display: grid;
+    gap: 2rem;
+
+    
+
+   
+
+}
+.skills img{
+    width: 90px;
+    height: 90px;
+   
+   
+}
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    
+    
+}
+
+.skills .content{
+    display: flex;
+    gap: 4rem;
+   
+}
+.salary{
+    background:linear-gradient(white,lightgray);
+    padding: 3rem;
+    place-self:start;
+}
+ .salary span{
+    font-size: 3rem;
+}
+.salary div{
+    display: inline;
+    border: 2px solid gray;
+    border-radius: 1.5rem;
+    color: black;
+    padding: 0.5rem;
+    margin: 1rem ;
+    
+
+}
+.job{
+    background-color: #7A86B6;
+    width: 50vw;
+    color: white;
+    padding: 1rem;
+    font-size: 18px;
+    place-self: center;
+
+}
+body{
+    background-color: #F1EEE9 !important;
+}
+footer{
+    width: 100%;
+    background-color: rgb(29, 29, 41);
+    color:white;
+    text-align: center;
+    display: flex;
+    gap:2rem;
+    margin-top: 5rem;
+  }
+
+  .navi{
+    display: none;
+}
+   
+  .cancel{
+    display: none;
+    visibility: hidden;}
+
+.responsive-nav{
+display: none;
+}
+.contain{
+display: block;
+}
+
+  .footer-about{
+    display:inline-block;
+    text-align: left;
+    width:25% ;
+    margin: 1.25rem;
+}
+.links ul li{
+    list-style: none;
+}
+.links ul li a {
+    color: white;
+    text-decoration: none;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    margin:1.25rem;   
+}
+.links ul{
+    display:flex;
+    flex-direction: column;
+    gap:0.75rem;
+    align-items: flex-start;   
+}
+.links ul li a:hover {
+    text-decoration: underline;
+    color: blue;
+
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+.contact{
+    width:25% ;
+    margin: 1rem;
+    text-align: left;
+}
+footer button{
+    width:25%;
+}
+footer button:hover{
+    background-color: black;
+    color:white
+
+}   
+@media  screen and (max-width:768px) {
+    .salary,.job,.skills,.job-description{
+        place-self: center;
+    }
+    .job-description,.job{
+        width: 80vw;
+    }
+    .responsive-nav{
+        display:flex;
+        justify-content: space-between;
+        padding:50px 60px;
+        align-items: center;
+        background-color: #0c1b4d;
+        width: 100%;
+        height: max-content;}
+    .nav{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    text-align: center;
+    display:none; 
+    }
+    .active-navbar{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .logo{
+        margin-left: -3rem;
+        position: absolute;
+    top: 1rem;
+    }
+    .navi:hover {
+        background-color: rgba(245, 245, 245, 0.7);
+    }
+    nav .logo{
+        display: none;
+    }
+  
+    
+    ul img{
+      display: block;
+      position: absolute;
+      top:0.5rem;
+      left: 1rem;
+      }
+      
+   nav ul{
+      
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    ul li{
+      margin-top: 5rem;
+      background-size: cover; 
+      
+    }
+    nav ul li :hover{
+        border: 0;
+        opacity: 0.7;
+    }
+    .card{
+        border-radius: 0;
+    }
+    #accordion{
+        margin: 5rem 0;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .contact{
+        width: 70%;
+    }
+    footer-about{
+        display:inline;
+        text-align: center;
+        width:100% ;
+        margin: 1.25rem;
+}
+.contain{
+  display: none;
+}
+    }
+    .navi{
+      
+      position: absolute;
+      top: 2rem;
+      right: 1rem;
+      display: block;
+      visibility: visible;
+      width: 40px;
+      height: 40px;
+    }
+
+    .cancel{
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      display: none;
+      visibility: visible;
+      width: 50px;
+      height: 50px;
+    }
+  
+  
+   .unactive{
+    display: none;
+   }
+  
+    .active{
+      display: block;
+    }
+  .animation{
+    animation-name: appear;
+    animation-duration: 0.75s;
+  }
+  
+  @keyframes appear {
+    from{
+      transform: scaleX(0);
+      transform-origin: right;
+    }
+    to{
+      transform: scaleX(1);
+      transform-origin: right;
+    } 
+    
+  }
+  *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  
+    
+
